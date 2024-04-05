@@ -1,9 +1,11 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 # What-is-my-IP
+
+A website that get the user IP and geolocation and display a map from Leaflet according to the API's coordinates.
+
+## Tech Used:
+
+### **HTML/ CSS/ JS/ React;**
+
+_REST API/useEffect, useState/React Router/React Leaflet/ Luxon;_
+
+_Tailwind/ DaisyUI/_
