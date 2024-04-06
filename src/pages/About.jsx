@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="flex-grow bg-base flex flex-col justify-center items-center gap-4 ">
-      <h1 className="text-2xl">What is my IP</h1>
-      <p className="text-secondary-content text-center text-balance">
+      <div className="text-4xl mb-28 divider ">What is my IP </div>
+      <p className="text-secondary-content text-center text-balance mb-8">
         A website that get the user IP and geolocation and display a map from
         Leaflet according to the API's coordinates.
       </p>
