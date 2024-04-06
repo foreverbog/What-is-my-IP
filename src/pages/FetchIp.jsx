@@ -3,9 +3,12 @@ import MapLocation from "../components/MapLocation";
 import { DateTime } from "luxon";
 import { useState, useEffect } from "react";
 import { fetchIp, fetchCountry } from "../services/fetchData";
+
+import L from "leaflet";
 const FetchIp = () => {
+  L.Icon.Default.imagePath = "images/";
   const dt = DateTime.now();
-  const [userData, setUserData] = useState(null);
+  const [userData, setUserData] = useState();
   const [countryData, setCountryData] = useState([]);
   useEffect(() => {
     const fetchdata = async () => {
@@ -71,7 +74,7 @@ const FetchIp = () => {
               The problem will be fixed soon! Thank you for your understanding!
             </b>
           </p>
-          <Link to="/" className=" btn btn-primary mt-16">
+          <Link to="/" className=" btn btn-primary mt-16 mb-4">
             Go back
           </Link>
         </div>
