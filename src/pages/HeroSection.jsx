@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import "leaflet/dist/images/marker-shadow.png";
-import "leaflet/dist/images/marker-icon.png";
+import L from "leaflet";
 
 import "leaflet/dist/leaflet.css";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Marker } from "react-leaflet";
 
 const HeroSection = () => {
+  L.Icon.Default.imagePath = "images/";
   return (
     <div className="flex-grow flex-col flex gap-2 justify-center items-center">
       <div className="text-4xl mb-28 divider ">Welcome ! </div>

@@ -1,9 +1,9 @@
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import "leaflet/dist/images/marker-shadow.png";
-import "leaflet/dist/images/marker-icon.png";
+import L from "leaflet";
 
 const MapLocation = ({ userData }) => {
+  L.Icon.Default.imagePath = "images/";
   return (
     <MapContainer
       className="card card-compact w-60 bg-base-100 shadow-xl h-[200px]"
