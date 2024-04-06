@@ -1,10 +1,21 @@
+import { NavLink } from "react-router-dom";
 const NavBar = () => {
   return (
-    <div className="navbar  bg-base-300 shadow-md shadow-info-content  justify-between">
-      <p className="text-accent-content">Check my IP!</p>
+    <div className="navbar  bg-base-300 border-b-2 border-primary/30  justify-between">
+      <img
+        className="ml-8"
+        src="/src/assets/IP-logo.png"
+        alt="IP App Logo"
+        width="30px"
+      />
+
       <div className="flex gap-4">
-        <button className="btn bg-secondary text-accent-content">About</button>
-        <button className="btn bg-secondary text-accent-content">Log in</button>
+        <NavLink
+          to="/about"
+          className="btn btn-outline bg-base-300  text-base-content font-bold hover:bg-primary hover:text-base-300 transition-all duration-1000 mr-4"
+        >
+          About
+        </NavLink>
       </div>
     </div>
   );

@@ -14,7 +14,7 @@ const FetchIp = ({ userData, countryData }) => {
               <div>
                 <b>Your IP address is:</b> {userData.ip}
               </div>
-              <div className="flex gap-2 ">
+              <div className="flex flex-wrap gap-2  text-center text-balance justify-center">
                 You are currently located in: {userData.location.city},{" "}
                 {countryData[0].name.common}
                 <img
@@ -34,7 +34,15 @@ const FetchIp = ({ userData, countryData }) => {
       ) : (
         <div className="flex-grow flex flex-col justify-center items-center">
           <span className="loading loading-spinner loading-lg  "></span>
-          <Link to="/" className="btn btn-primary mt-16">
+          <p className="leading-8 mt-8 text-center text-balance text-xs">
+            <b>
+              If no data is displayed, it means that the API request limit has
+              been exceeded.
+              <br />
+              The problem will be fixed soon! Thank you for your understanding!
+            </b>
+          </p>
+          <Link to="/" className=" btn btn-primary mt-16">
             Go back
           </Link>
         </div>

@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (min-width: 400px) {
+  .active {
+    transform: translate(-200%);
+    transition: all 1s;
+
+    background-color: oklch(var(--p));
+    color: oklch(var(--b3));
+  }
+}
+.active {
+  transition: all 1s;
+
+  background-color: oklch(var(--p));
+  color: oklch(var(--b3));
+}

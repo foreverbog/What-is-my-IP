@@ -4,8 +4,8 @@ A website that get the user IP and geolocation and display a map from Leaflet ac
 
 ## Tech Used:
 
-### **HTML/ CSS/ JS/ React;**
+### **HTML/ CSS/ JS/ React**
 
-_REST API/useEffect, useState/React Router/React Leaflet/ Luxon;_
+_REST API/useEffect, useState/React Router/React Leaflet/React Icons/Luxon;_
 
 _Tailwind/ DaisyUI/_
