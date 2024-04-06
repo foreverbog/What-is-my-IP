@@ -5,6 +5,7 @@ export const fetchIp = async () => {
         import.meta.env.VITE_GEO_API_KEY
       }`
     );
+    // Key updated for 1000 requests
     if (!response.ok) {
       throw new Error("Could not fetch" + response.status);
     }
