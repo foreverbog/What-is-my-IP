@@ -1,10 +1,39 @@
 import { Link } from "react-router-dom";
 import MapLocation from "../components/MapLocation";
 import { DateTime } from "luxon";
-
-const FetchIp = ({ userData, countryData }) => {
+import { useState, useEffect } from "react";
+import { fetchIp, fetchCountry } from "../services/fetchData";
+const FetchIp = () => {
   const dt = DateTime.now();
+  const [userData, setUserData] = useState(null);
+  const [countryData, setCountryData] = useState([]);
+  useEffect(() => {
+    const fetchdata = async () => {
+      try {
+        const data = await fetchIp();
 
+        setUserData(data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchdata();
+  }, []);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        if (userData && userData.location) {
+          const data = await fetchCountry(userData.location.country);
+          setCountryData(data);
+        }
+        // console.log(data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchData();
+  }, [userData]);
   return (
     <>
       {countryData.length > 0 ? (
