@@ -15,21 +15,18 @@ const About = () => {
         </div>
         <div className="collapse-content flex flex-col items-center justify-center gap-4">
           <div className="flex flex-wrap gap-4">
-            <img src="src/assets/html5-icon.svg" alt="HTML-Logo" />
-            <img src="src/assets/css-icon.svg" alt="CSS-Logo" />
+            <img src="public/html5-icon.svg" alt="HTML-Logo" />
+            <img src="public/css-icon.svg" alt="CSS-Logo" />
+            <img src="public/tailwind-css-icon.svg" alt="TAILWIND-CSS-Logo" />
             <img
-              src="src/assets/tailwind-css-icon.svg"
-              alt="TAILWIND-CSS-Logo"
-            />
-            <img
-              src="src/assets/daisyui-logo.svg"
+              src="public/daisyui-logo.svg"
               alt="DaisyUI-Logo"
               width="48px"
               height="48px"
             />
-            <img src="src/assets/javascript-icon.svg" alt="JavaScript-Logo" />
+            <img src="public/javascript-icon.svg" alt="JavaScript-Logo" />
             <img
-              src="src/assets/react.svg"
+              src="public/react.svg"
               alt="React-Logo"
               width="48px"
               height="48px"
