@@ -4,7 +4,7 @@ const NavBar = () => {
     <div className="navbar  bg-base-300 border-b-2 border-primary/30  justify-between">
       <img
         className="ml-8"
-        src="/src/assets/IP-logo.png"
+        src="/images/IP-logo.png"
         alt="IP App Logo"
         width="30px"
       />
