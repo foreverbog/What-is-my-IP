@@ -8,25 +8,28 @@ const About = () => {
         A website that get the user IP and geolocation and display a map from
         Leaflet according to the API's coordinates.
       </p>
-      <div className="collapse collapse-arrow bg-base-300">
+      <div className="collapse collapse-arrow bg-base-300 w-[50vw]">
         <input type="checkbox" />
         <div className="text-xl collapse-title text-center font-medium">
           Tech Used:
         </div>
         <div className="collapse-content flex flex-col items-center justify-center gap-4">
-          <div className="flex flex-wrap gap-4">
-            <img src="public/html5-icon.svg" alt="HTML-Logo" />
-            <img src="public/css-icon.svg" alt="CSS-Logo" />
-            <img src="public/tailwind-css-icon.svg" alt="TAILWIND-CSS-Logo" />
+          <div className="flex flex-wrap justify-center gap-4">
+            <img src="/src/assets/html5-icon.svg" alt="HTML-Logo" />
+            <img src="/src/assets/css-icon.svg" alt="CSS-Logo" />
             <img
-              src="public/daisyui-logo.svg"
+              src="/src/assets/tailwind-css-icon.svg"
+              alt="TAILWIND-CSS-Logo"
+            />
+            <img
+              src="/src/assets/daisyui-logo.svg"
               alt="DaisyUI-Logo"
               width="48px"
               height="48px"
             />
-            <img src="public/javascript-icon.svg" alt="JavaScript-Logo" />
+            <img src="/src/assets/javascript-icon.svg" alt="JavaScript-Logo" />
             <img
-              src="public/react.svg"
+              src="/src/assets/react.svg"
               alt="React-Logo"
               width="48px"
               height="48px"
