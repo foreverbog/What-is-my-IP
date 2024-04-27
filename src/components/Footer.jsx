@@ -26,7 +26,7 @@ const Footer = () => {
         </a>
         <a
           className="text-2xl"
-          href="https://linkedin.com/in/bogdan-lazăr-000794198"
+          href="https://linkedin.com/in/bogdan-lazar-000794198"
           target="_blank"
         >
           <FaLinkedin />
